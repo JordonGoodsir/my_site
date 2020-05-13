@@ -8,8 +8,11 @@ h1 {
 #nav_container { 
     background-color: $header_background_color; 
     display: flex;   
-    height: 80px; 
-    align-items: center; 
+    height: 100px; 
+    align-items: center;  
+    border: 3px $header_text_color solid; 
+    border-bottom: 0px;
+    
     
 } 
 
@@ -21,20 +24,124 @@ nav ul {
     width:100%;
     padding-inline-start: 0px; 
     margin: 0px 5px;   
-    font-family: 'Montserrat', sans-serif; 
+    font-family: $body_font; 
     font-size: 1.2em;
 }   
 
-
-a { 
+ a { 
     text-decoration: none;
 }
 
-nav a:hover, nav a:active { 
-    color: $highlight_color 
+ a:hover { 
+    color: $highlight_color;
 
 } 
 
-nav a:visited { 
-    color: $header_text_color
+ a:visited { 
+    color: $header_text_color; 
+}      
+
+
+// header 
+
+#header_container { 
+    background-color: $header_background_color; 
+    display:flex; 
+    height: 712px; 
+    justify-content:center;  
+    align-items: center;
+    border: 2px $header_text_color solid; 
+    border-top: 1; 
+}   
+
+
+.header_text { 
+    display:flex;  
+    justify-content:center;  
+    align-items:center;
+    flex-direction: column;   
+    height: 200px;   
+    padding:10px;
+    border: 2px $header_text_color solid;
+} 
+
+.header_text h1 { 
+    font-family: $title_font; 
+    color: $header_text_color;  
+    font-size: 3em; 
 }  
+
+.header_text span { 
+    color: $highlight_color
+}
+
+.header_text p { 
+    font-family: $body_font; 
+    color: $header_text_color; 
+    margin: 10px;  
+    padding-right: 0px; 
+
+}   
+
+.line {  
+    width: 100%; 
+    height: 1px; 
+    background-color: $header_text_color;
+}
+// main content
+
+#main_container {  
+    background-color: $header_text_color;  
+    
+} 
+
+.main_section_content { 
+    font-family: $body_font; 
+    display: flex; 
+    flex-direction: column;   
+    align-items:center;
+    text-align:center;   
+    padding: 40px 10px; 
+    font-size: 0.9em; 
+}
+
+.main_section_content img { 
+    width: 40%; 
+    margin: 30px
+}
+
+
+
+// footer 
+
+#footer_container { 
+    background-color: $header_background_color;  
+    display:flex; 
+    justify-content: center;
+    width:100%;  
+    height: 60px; 
+    border: 2px $header_text_color solid;
+}  
+
+.footer_images { 
+    display:flex; 
+    align-items: center; 
+    color: $header_text_color;  
+} 
+
+i { 
+    margin: 0px 20px;   
+    width:100%;
+    color: $header_text_color; 
+    transition: transform .2s;  
+
+}  
+
+i:hover { 
+    color: $highlight_color;  
+    transform: scale(1.5);
+}   
+
+
+
+
