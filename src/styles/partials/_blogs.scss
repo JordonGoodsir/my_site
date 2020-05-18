@@ -1,0 +1,10 @@
+@import "fonts_colors";  
+
+#blogs_header_container{  
+    @include header_mobile
+}
+
+.blogs_header_text h1 {  
+    @include header_format_mobile
+}  
+

@@ -1,0 +1,87 @@
+@import "fonts_colors"; 
+
+
+// header
+#about_me_header_container {  
+    @include header_mobile
+}
+
+.about_me_header_text h1 {  
+    @include header_format_mobile
+} 
+
+.about_me_header_text span { 
+    color: $highlight_color
+}  
+
+// skills section
+
+#about_me_skills_container { 
+    background-color: $header_text_color; 
+    display:flex; 
+    align-items:center;
+    
+}    
+
+.about_me_skills_content h1 { 
+    font-family: $title_font; 
+    font-size: 2em
+}
+
+.about_me_skills_content {  
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;
+    text-align: center; 
+}
+
+.about_me_skills_content img { 
+    width: 50%; 
+    margin: 30px; 
+    
+} 
+
+// hobbie section
+
+.about_me_skills_content p {  
+    margin: 30px; 
+    font-size: 1em; 
+    font-family: $body_font;
+}  
+
+#hobbie_images { 
+    width: 100%;  
+} 
+
+
+#hobbies_container { 
+    background-color: $header_text_color
+} 
+
+.hobbies_content { 
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;
+    text-align: center; 
+}
+
+.hobbies_content h2 { 
+    font-family: $body_font; 
+    font-size: 1.4em; 
+    margin: 30px; 
+    margin-bottom: 0;
+}  
+
+.hobbies h1 {  
+    font-family: $title_font; 
+    font-size: 2em; 
+    padding: 50px; 
+    padding-top: 0; 
+}  
+
+.hobbies_content p {  
+    margin: 30px; 
+    font-size: 1em; 
+    font-family: $body_font;
+}  
+

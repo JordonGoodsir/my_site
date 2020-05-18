@@ -4,4 +4,37 @@ $header_text_color:  #eeeeee;
 $header_background_color: #2c2d36; 
 $normal_text_color: black; 
 $title_font: 'Oswald', sans-serif;;
-$body_font: 'Montserrat', sans-serif;;
+$body_font: 'Montserrat', sans-serif;  
+$phone_margin: 2px $header_text_color solid; 
+$tablet_margin: 4px $header_text_color solid;  
+
+
+@mixin header_mobile { 
+background-color: $header_background_color; 
+    display:flex; 
+    height: 300px; 
+    justify-content:center;  
+    align-items: center;
+    border: $phone_margin;  
+}  
+
+@mixin header_format_mobile { 
+    font-family: $title_font; 
+    color: $header_text_color; 
+    font-size: 3.3em; 
+} 
+
+@mixin header_tablet { 
+    background-color: $header_background_color; 
+    display:flex; 
+    height: 500px; 
+    justify-content:center;  
+    align-items: center;
+    border: $tablet_margin; 
+} 
+
+@mixin header_format_tablet { 
+    font-family: $title_font; 
+    color: $header_text_color; 
+    font-size: 1.6em;
+} 

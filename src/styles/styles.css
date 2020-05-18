@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 h1 {
   text-align: center;
 }
@@ -13,7 +14,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px #eeeeee solid;
+  border: 2px #eeeeee solid;
   border-bottom: 0px;
 }
 
@@ -32,6 +33,7 @@ nav ul {
   margin: 0px 5px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
+  font-weight: bolder;
 }
 
 a {
@@ -46,7 +48,7 @@ a:visited {
   color: #eeeeee;
 }
 
-#header_container {
+#home_header_container {
   background-color: #2c2d36;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +64,7 @@ a:visited {
   border-top: 1;
 }
 
-.header_text {
+.home_header_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,39 +78,34 @@ a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 200px;
-  padding: 10px;
+  height: 300px;
+  padding: 20px;
   border: 2px #eeeeee solid;
 }
 
-.header_text h1 {
+.home_header_text h1 {
   font-family: "Oswald", sans-serif;
   color: #eeeeee;
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
-.header_text span {
+.home_header_text span {
   color: #1a9b69;
 }
 
-.header_text p {
+.home_header_text p {
   font-family: "Montserrat", sans-serif;
   color: #eeeeee;
   margin: 10px;
   padding-right: 0px;
+  font-size: 1.2em;
 }
 
-.line {
-  width: 100%;
-  height: 1px;
+#home_main_container {
   background-color: #eeeeee;
 }
 
-#main_container {
-  background-color: #eeeeee;
-}
-
-.main_section_content {
+.home_main_section_content {
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,12 +119,11 @@ a:visited {
           align-items: center;
   text-align: center;
   padding: 40px 10px;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
-.main_section_content img {
-  width: 40%;
-  margin: 30px;
+.home_main_section_content img {
+  width: 45%;
 }
 
 #footer_container {
@@ -153,7 +149,7 @@ a:visited {
   color: #eeeeee;
 }
 
-i {
+.footer_images i {
   margin: 0px 20px;
   width: 100%;
   color: #eeeeee;
@@ -161,12 +157,120 @@ i {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
+  font-size: 1.7em;
 }
 
 i:hover {
   color: #1a9b69;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+#about_me_header_container {
+  background-color: #2c2d36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px #eeeeee solid;
+}
+
+.about_me_header_text h1 {
+  font-family: "Oswald", sans-serif;
+  color: #eeeeee;
+  font-size: 3.3em;
+}
+
+.about_me_header_text span {
+  color: #1a9b69;
+}
+
+#about_me_skills_container {
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_me_skills_content h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+}
+
+.about_me_skills_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about_me_skills_content img {
+  width: 50%;
+  margin: 30px;
+}
+
+.about_me_skills_content p {
+  margin: 30px;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+#hobbie_images {
+  width: 100%;
+}
+
+#hobbies_container {
+  background-color: #eeeeee;
+}
+
+.hobbies_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hobbies_content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+  margin: 30px;
+  margin-bottom: 0;
+}
+
+.hobbies h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  padding: 50px;
+  padding-top: 0;
+}
+
+.hobbies_content p {
+  margin: 30px;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (min-width: 600px) {
@@ -207,9 +311,103 @@ i:hover {
   .col-s-12 {
     width: 100%;
   }
+  nav ul {
+    font-size: 2em;
+    margin: 0px 30px;
+  }
+  #nav_container {
+    border: 4px #eeeeee solid;
+    border-bottom: 0px;
+  }
+  .home_header_text h1 {
+    font-size: 6em;
+  }
+  .home_header_text {
+    height: 450px;
+  }
+  .home_header_text p {
+    font-size: 2em;
+    margin: 20px;
+  }
+  #home_header_container {
+    height: 924px;
+    border: 4px #eeeeee solid;
+  }
+  #home_main_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home_main_section_content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 500px;
+    width: 80%;
+  }
+  .home_main_section_content img {
+    width: 46%;
+  }
+  .home_main_section_content p {
+    font-size: 1.5em;
+  }
+  #footer_container {
+    border: 4px #eeeeee solid;
+    height: 90px;
+  }
+  i {
+    font-size: 2.8em;
+    margin: 0px 50px;
+  }
+  #about_me_header_container {
+    background-color: #2c2d36;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 4px #eeeeee solid;
+  }
+  .about_me_header_text {
+    font-family: "Oswald", sans-serif;
+    color: #eeeeee;
+    font-size: 1.6em;
+  }
+  .about_me_skills_content h1, .hobbies_content h1 {
+    font-size: 3.1em;
+    margin: 60px;
+  }
+  .about_me_skills_content p, .hobbies_content p {
+    font-size: 2.1em;
+    margin: 60px;
+  }
+  .about_me_skills_content h2, .hobbies_content h2 {
+    font-size: 2.4em;
+    margin: 60px;
+    margin-bottom: 0px;
+  }
+  .hobbies h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3em;
+    padding: 70px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* For desktop: */
   .col-1 {
     width: 8.33%;
@@ -247,6 +445,210 @@ i:hover {
   .col-12 {
     width: 100%;
   }
+  #home_header_container {
+    height: 988px;
+  }
+  .home_header_text h1 {
+    font-size: 7.5em;
+  }
+  .home_header_text {
+    height: 500px;
+    border: 4px #eeeeee solid;
+    padding: 0px 40px;
+  }
+  .home_header_text p {
+    margin: 30px;
+    font-size: 2.4em;
+  }
+  #home_main_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 700px;
+  }
+  .home_main_section_content img {
+    width: 28%;
+  }
+  .home_main_section_content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 1.6em;
+    width: 70%;
+  }
+  #footer_container {
+    height: 90px;
+  }
+  i {
+    margin: 0px 100px;
+    font-size: 2.8em;
+  }
+  .about_me_skills_content img {
+    width: 60%;
+  }
+  .about_me_skills_content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about_me_skills_content {
+    margin: 0 10%;
+  }
+  #about_me_skills_container {
+    height: 85vh;
+  }
+  .hobbies_content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hobbies {
+    font-size: 1.9em;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 80px;
+  }
+  #hobbie_images {
+    width: 70%;
+    max-height: 312.14px;
+  }
+}
+
+#portfolio_header_container {
+  background-color: #2c2d36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px #eeeeee solid;
+}
+
+.portfolio_header_text h1 {
+  font-family: "Oswald", sans-serif;
+  color: #eeeeee;
+  font-size: 3.3em;
+}
+
+#languages_container {
+  background-color: #eeeeee;
+}
+
+.languages_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  font-size: 6em;
+  row-gap: 10vh;
+}
+
+.to_be:nth-child(5) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.heading h1 {
+  font-size: 1.9em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  padding: 30px;
+  color: #eeeeee;
+  background-color: #2c2d36;
+}
+
+.heading p {
+  background-color: #eeeeee;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 5vh;
+}
+
+#projects {
+  background-color: #eeeeee;
+}
+
+.projects_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fade1, .fade2, .fade3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.project_image {
+  height: 210px;
+  width: 375px;
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.projects_content h4 {
+  background-color: #2c2d36;
+  padding: 20px;
+  color: #eeeeee;
+}
+
+.box_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fade1:hover .project_image, .fade2:hover .project_image, .fade3:hover .project_image {
+  opacity: 0.3;
+}
+
+.fade1:hover .box_center, .fade2:hover .box_center, .fade3:hover .box_center {
+  opacity: 1;
+}
+
+#blogs_header_container {
+  background-color: #2c2d36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px #eeeeee solid;
+}
+
+.blogs_header_text h1 {
+  font-family: "Oswald", sans-serif;
+  color: #eeeeee;
+  font-size: 3.3em;
 }
 
 * {
