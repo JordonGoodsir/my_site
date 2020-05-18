@@ -56,8 +56,8 @@
         height:90px;   
     }  
     
-    i { 
-        font-size: 2.8em; 
+    .footer_images i { 
+        font-size: 3.5em; 
         margin: 0px 50px;
     } 
 
@@ -65,7 +65,7 @@
 
 // header
 #about_me_header_container { 
-     @include header_tablet
+    @include header_tablet
  }
 
  .about_me_header_text { 
@@ -98,6 +98,54 @@
     padding: 70px;
 }  
 
+// PORTFOLIO  
+
+// header
+
+#portfolio_header_container { 
+    @include header_tablet; 
+}
+
+.portfolio_header_text { 
+    @include header_format_tablet
+}  
+
+.heading h1 { 
+    @include heading_tablet
+}  
+
+// languages section 
+
+.special p { 
+    margin-bottom: 50px;
+}
+
+.icon { 
+    font-size: 2em
+}     
+
+.languages_content i:hover { 
+    font-size:1.6em
+} 
+
+
+// projects section
+
+.heading p { 
+    font-size: 2em
+} 
+
+.project_image { 
+    height:500px;
+    border: $tablet_margin;
+} 
+
+.projects_content h4 { 
+    padding: 40px;
+    font-size: 2.4em; 
+} 
+
+
 }
   
   @media only screen and (min-width: 769px) {
@@ -118,9 +166,9 @@
     
 // home    
     // header 
-    #home_header_container{ height:988px} 
+    #home_header_container{ height:99vh} 
     .home_header_text h1{font-size: 7.5em;} 
-    .home_header_text{ height:500px; border:$tablet_margin; padding: 0px 40px;} 
+    .home_header_text{ height:50vh; border:$tablet_margin; padding: 0px 40px;} 
     .home_header_text p {margin: 30px; font-size: 2.4em;} 
 
   // main 
@@ -141,8 +189,10 @@
   } 
 
 //   footer
-#footer_container{height:90px;}  
-i {margin: 0px 100px; font-size: 2.8em} 
+.footer_images i { 
+    font-size: 3.5em; 
+    margin: 0px 150px;
+}  
 
 // ABOUT_ME 
 
@@ -150,7 +200,6 @@ i {margin: 0px 100px; font-size: 2.8em}
 
 .about_me_skills_content img { 
     width: 60%;  
-    
 }  
 
 .about_me_skills_content { 
@@ -184,6 +233,99 @@ i {margin: 0px 100px; font-size: 2.8em}
 #hobbie_images { 
     width:70%;
     max-height: 312.14px;   
+} 
+
+// PORTFOLIO 
+ 
+// languages section
+
+.heading h1 { 
+    margin: 150px 40px;  
+} 
+
+.special h1 { 
+    margin-top: 100px
+} 
+
+.upright_triangle { 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);  
+    background-color: $header_background_color;
+    width: 6em; 
+    height: 5em;  
+    display:flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    margin: 0px -200px;  
+    margin-top: 90px;  
+}  
+
+.upsidedown_triangle { 
+    clip-path: polygon(1% 2%, 98% 2%, 49% 99%); 
+    background-color: $header_background_color;
+    width: 6em; 
+    height: 5em;  
+    display:flex; 
+    justify-content: center; 
+    align-items: flex-start;  
+  
+}   
+
+.upsidedown_icon { 
+    margin-top: 75px;
+} 
+
+.rightside_icon { 
+    margin-bottom: 75px;
+} 
+
+.languages_content { 
+    display:flex; 
+    justify-content: center; 
+    height:600px;  
+}  
+
+.icon { 
+    font-size: 1em
+}   
+
+.icon:hover { 
+    font-size: 1.1em
+}  
+
+.languages_content i { 
+    font-size: 2em;
 }
+
+// projects section 
+
+.heading {  
+display: flex;   
+justify-content: center; 
+align-items: center; 
+flex-direction: column;
+
+}
+
+.heading h1 { 
+    width: 95%
+}
+
+.heading p {  
+display: flex;   
+justify-content: center; 
+align-items: center; 
+width:50%
+
+}
+
+.projects_content { 
+    flex-direction: row; 
+    justify-content: space-around; 
+} 
+
+
+.projects_content h4 { 
+    padding: 25px;
+} 
 
 } 

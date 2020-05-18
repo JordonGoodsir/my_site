@@ -20,7 +20,7 @@ background-color: $header_background_color;
 
 @mixin header_format_mobile { 
     font-family: $title_font; 
-    color: $header_text_color; 
+    color: $highlight_color; 
     font-size: 3.3em; 
 } 
 
@@ -37,4 +37,25 @@ background-color: $header_background_color;
     font-family: $title_font; 
     color: $header_text_color; 
     font-size: 1.6em;
+}  
+
+@mixin heading_mobile { 
+        font-size: 1.9em;
+        font-family: $title_font; 
+        font-weight: 500; 
+        padding: 30px;   
+        color: $header_text_color;
+        background-color: $header_background_color;    
+        margin: 40px 20px;
+}  
+
+@mixin heading_tablet { 
+    font-size: 3.7em;
+    font-family: $title_font; 
+    font-weight: 500; 
+    padding: 30px 40px;   
+    color: $header_text_color;
+    background-color: $header_background_color;    
+    margin: 60px 20px; 
 } 
+
