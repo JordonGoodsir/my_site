@@ -33,10 +33,9 @@ nav ul {
     text-decoration: none;
 }
 
- a:hover { 
+#nav_container a:hover { 
     color: $highlight_color;
-
-} 
+}
 
  a:visited { 
     color: $header_text_color; 

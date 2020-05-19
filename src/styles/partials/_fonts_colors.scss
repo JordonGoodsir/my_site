@@ -21,7 +21,7 @@ background-color: $header_background_color;
 @mixin header_format_mobile { 
     font-family: $title_font; 
     color: $highlight_color; 
-    font-size: 3.3em; 
+    font-size: 3.3em;  
 } 
 
 @mixin header_tablet { 

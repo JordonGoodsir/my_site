@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+#nav_container a:hover {
   color: #1a9b69;
 }
 
