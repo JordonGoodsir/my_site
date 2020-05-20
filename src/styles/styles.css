@@ -294,7 +294,7 @@ a:visited {
 
 .home_main_section_content img {
   width: 45%;
-  margin: 10vh 2vw;
+  margin: 5vh 2vw;
 }
 
 .resume_container {
@@ -868,15 +868,6 @@ body {
             justify-content: center;
   }
   .home_main_section_content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     min-height: 500px;
     width: 95%;
   }
@@ -929,6 +920,10 @@ body {
     font-size: 2.4em;
     margin: 60px;
     margin-bottom: 0px;
+  }
+  .col-7 .resume_button {
+    font-size: 2.3em;
+    margin-top: 1vh;
   }
   .form_text {
     font-size: 2.1em;
@@ -1101,8 +1096,16 @@ body {
     width: 28%;
   }
   .home_main_section_content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 500px;
     font-size: 1.5em;
     width: 65%;
   }
