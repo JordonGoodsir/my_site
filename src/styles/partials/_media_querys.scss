@@ -22,16 +22,22 @@
 
     // header
     .home_header_text h1{ font-size: 6em;} 
-    .home_header_text {height: 450px;} 
+    .home_header_text {height: 490px;} 
     .home_header_text p {font-size: 2em; margin: 20px}  
     #home_header_container{ 
-        height: 91vh; 
+        height: 90.2vh; 
         border:$tablet_margin;  
         border-top: 0px;
+    }    
+
+    .contact_me {  
+        font-size: 1.7em;  
     }   
     
+    
     .to_bottom { 
-        font-size: 2.7em;
+        font-size: 3.2em; 
+        top: 92%;
     }
     
 
@@ -47,16 +53,20 @@
         justify-content: space-around; 
         align-items: center;  
         min-height:500px;
-        width: 80%
+        width: 95%
     }   
 
     .home_main_section_content img { 
         width: 46% 
     } 
-
+    
 
     .home_main_section_content p {  
         font-size: 1.5em;
+    } 
+
+    .resume_button { 
+        font-size: 1.6em;
     }
 
     // footer 
@@ -99,7 +109,11 @@
     margin-bottom: 0px
 } 
  
-// contact me section 
+// contact me section  
+
+.form_text {  
+    font-size: 2.1em;
+    } 
 
 label {   
     font-size: 2em;
@@ -123,7 +137,9 @@ option {
 
 textarea { 
     height: 15vh;
-}
+} 
+
+
 
 // PORTFOLIO  
 
@@ -225,9 +241,9 @@ textarea {
     #home_header_container{  
         height:91vh;  
     } 
-    .home_header_text h1{font-size: 7.5em;} 
+    .home_header_text h1{font-size: 7em;} 
     .home_header_text{  
-        height:50vh;  
+        height:61vh;  
         border:$tablet_margin;  
         padding: 0px 40px;  
         
@@ -247,9 +263,13 @@ textarea {
 
   .home_main_section_content {  
       justify-content: space-around;  
-      font-size: 1.6em; 
-      width: 70%; 
-  } 
+      font-size: 1.5em; 
+      width: 65%; 
+  }  
+
+  .resume_button { 
+    font-size: 1.6em;
+}
 
 //   footer
 .footer_images a { 
@@ -328,7 +348,7 @@ option {
 // languages section
 
 .heading h1 { 
-    margin: 150px 40px;  
+    margin: 100px 40px;  
 } 
 
 .special h1 { 
@@ -418,7 +438,13 @@ width:50%
 
 .projects_content h4 { 
     padding: 25px;
-}  
+}   
+
+.project_image {  
+    max-height: 380px;
+}
+
+
 
 // BLOGS 
 

@@ -184,12 +184,33 @@ nav ul {
     margin: 10px;  
     padding-right: 0px;  
     font-size:1.2em;  
-}    
+}     
+
+.contact_me {  
+    border: 2px $highlight_color solid; 
+    border-radius: 0.2em;
+    font-family: $body_font; 
+    font-size: 1em; 
+    padding: 1vh 4vw;  
+    transition: 0.3s; 
+    margin-top: 1vh; 
+
+}   
+
+.contact_me a:visited { 
+    color: $header_text_color
+}
+
+.contact_me:hover {  
+    background-color: $highlight_color
+ 
+} 
+ 
 
 .to_bottom {  
     color: $header_text_color;   
     position: absolute; 
-    top: 95%; 
+    top: 93%; 
     font-size: 2em;
 }
 
@@ -207,12 +228,42 @@ nav ul {
     text-align:center;   
     padding: 40px 10px; 
     font-size: 1.2em; 
+} 
+
+.home_text { 
+    display:flex; 
+    flex-direction: column; 
 }
 
 .home_main_section_content img { 
-    width: 45%; 
+    width: 45%;  
+    margin: 10vh 2vw;
+} 
+
+.resume_container { 
+    width:100%;
+    display:flex; 
+    justify-content: center;
 }
 
+.resume_button { 
+    border: 1px solid $header_background_color; 
+    font-family: $body_font; 
+    border-radius: 0.2em;
+    padding: 0.8vh 2vw;  
+    font-weight: bold; 
+    transition: 0.3; 
+    margin-top: 4vh 
+}   
+
+.resume_button:visited { 
+    color: $header_background_color;
+}
+
+.resume_button:hover { 
+    background-color:$header_background_color; 
+    color: $highlight_color
+} 
 
 
 // footer 
@@ -237,7 +288,6 @@ nav ul {
     margin: 0px 20px;   
     width:100%;
     color: $header_text_color; 
-      
     font-size: 2.2em; 
 
 }  
