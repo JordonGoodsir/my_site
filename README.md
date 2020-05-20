@@ -23,6 +23,8 @@
 
 ## Sitemap
 
+![sitemap](./docs/sitemap.PNG)
+
 
 
 
@@ -33,4 +35,9 @@
 
 
 
-## Teck Stack
+## Teck Stack 
+
+- HTML 
+- CSS 
+- SASS
+
