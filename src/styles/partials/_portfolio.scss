@@ -22,8 +22,6 @@ body {
     justify-items: center; 
     font-size: 6em; 
     row-gap: 4vh; 
-       
-    
 } 
 
 .icon:nth-child(5) { 
@@ -35,15 +33,14 @@ body {
     padding: 10px
 }
 
-.languages_content i:hover { 
+.languages_content a:hover { 
     font-size:1.5em
 } 
 
 // projects section
 
 .heading h1 { 
-    @include heading_mobile;
-    border: $phone_margin;   
+    @include heading_mobile;   
 }     
 
 .heading p { 

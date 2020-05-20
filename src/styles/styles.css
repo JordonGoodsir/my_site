@@ -6,7 +6,7 @@ h1 {
 }
 
 #nav_container {
-  background-color: #2c2d36;
+  background-color: #252120;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-#nav_container a:hover {
+#nav_container li a:hover {
   color: #1a9b69;
 }
 
@@ -49,11 +49,11 @@ a:visited {
 }
 
 #home_header_container {
-  background-color: #2c2d36;
+  background-color: #252120;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 712px;
+  height: 89vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -61,7 +61,141 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
   border: 2px #eeeeee solid;
-  border-top: 1;
+  border-top: 0px;
+}
+
+.moving_shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.moving_shapes li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  background-color: #eeeeee;
+  opacity: 0.15;
+  bottom: -13%;
+  -webkit-animation: float infinite;
+          animation: float infinite;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.moving_shapes li:nth-child(1) {
+  width: 5em;
+  height: 5em;
+  left: 12.5%;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 21s;
+          animation-duration: 21s;
+}
+
+.moving_shapes li:nth-child(2) {
+  width: 2em;
+  height: 2em;
+  left: 25%;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+}
+
+.moving_shapes li:nth-child(3) {
+  width: 1em;
+  height: 1em;
+  left: 37.5%;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.moving_shapes li:nth-child(4) {
+  width: 6.5em;
+  height: 6.5em;
+  left: 50%;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.moving_shapes li:nth-child(5) {
+  width: 1.9em;
+  height: 1.9em;
+  left: 62.5%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.moving_shapes li:nth-child(6) {
+  width: 1.8em;
+  height: 1.8em;
+  left: 75%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.moving_shapes li:nth-child(7) {
+  width: 1em;
+  height: 1em;
+  left: 87.5%;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(-1090px) rotate(630deg);
+            transform: translateY(-1090px) rotate(630deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(-1090px) rotate(630deg);
+            transform: translateY(-1090px) rotate(630deg);
+    opacity: 0;
+  }
 }
 
 .home_header_text {
@@ -101,6 +235,13 @@ a:visited {
   font-size: 1.2em;
 }
 
+.to_bottom {
+  color: #eeeeee;
+  position: absolute;
+  top: 95%;
+  font-size: 2em;
+}
+
 #home_main_container {
   background-color: #eeeeee;
 }
@@ -127,7 +268,7 @@ a:visited {
 }
 
 #footer_container {
-  background-color: #2c2d36;
+  background-color: #252120;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,6 +278,7 @@ a:visited {
   width: 100%;
   height: 60px;
   border: 2px #eeeeee solid;
+  margin-top: 2vh;
 }
 
 .footer_images {
@@ -149,25 +291,21 @@ a:visited {
   color: #eeeeee;
 }
 
-.footer_images i {
+.footer_images a {
   margin: 0px 20px;
   width: 100%;
   color: #eeeeee;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-  font-size: 1.7em;
+  font-size: 2.2em;
 }
 
 i:hover {
   color: #1a9b69;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 #about_me_header_container {
-  background-color: #2c2d36;
+  background-color: #252120;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,6 +317,7 @@ i:hover {
       -ms-flex-align: center;
           align-items: center;
   border: 2px #eeeeee solid;
+  border-top: 0px;
 }
 
 .about_me_header_text h1 {
@@ -263,8 +402,9 @@ i:hover {
 .hobbies h1 {
   font-family: "Oswald", sans-serif;
   font-size: 2em;
-  padding: 50px;
-  padding-top: 0;
+  margin: 50px;
+  margin-top: 20px;
+  border: #252120 2px solid;
 }
 
 .hobbies_content p {
@@ -273,8 +413,71 @@ i:hover {
   font-family: "Montserrat", sans-serif;
 }
 
+#form_container {
+  background-color: #eeeeee;
+}
+
+.form_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 10vw;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 1.5vh 0px;
+}
+
+select {
+  padding: 1.5vh 0vw;
+  border: solid 1px #252120;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.2em;
+}
+
+.name {
+  height: 4vh;
+  border: solid 1px #252120;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.2em;
+  padding: 0px 1vw;
+}
+
+textarea {
+  height: 10vh;
+  border: solid 1px #252120;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  border-radius: 0.2em;
+  padding: 0.5vh 1vw;
+}
+
+input[type=submit] {
+  border: 1px solid #252120;
+  color: header;
+  padding: 1vh 2vw;
+  border-radius: 0.2em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 3vh;
+}
+
+input[type=submit]:hover {
+  background-color: #252120;
+  color: #1a9b69;
+  font-size: 1em;
+  font-weight: bold;
+}
+
 #portfolio_header_container {
-  background-color: #2c2d36;
+  background-color: #252120;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,6 +489,7 @@ i:hover {
       -ms-flex-align: center;
           align-items: center;
   border: 2px #eeeeee solid;
+  border-top: 0px;
 }
 
 .portfolio_header_text h1 {
@@ -323,19 +527,18 @@ body {
   padding: 10px;
 }
 
-.languages_content i:hover {
+.languages_content a:hover {
   font-size: 1.5em;
 }
 
 .heading h1 {
-  font-size: 1.9em;
+  font-size: 2.1em;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  padding: 30px;
-  color: #eeeeee;
-  background-color: #2c2d36;
+  padding: 20px;
+  background-color: #252120;
+  color: #1a9b69;
   margin: 40px 20px;
-  border: 2px #eeeeee solid;
 }
 
 .heading p {
@@ -378,7 +581,7 @@ body {
 }
 
 .projects_content h4 {
-  background-color: #2c2d36;
+  background-color: #252120;
   padding: 20px;
   color: #eeeeee;
 }
@@ -408,7 +611,7 @@ body {
 }
 
 #blogs_header_container {
-  background-color: #2c2d36;
+  background-color: #252120;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,12 +623,107 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 2px #eeeeee solid;
+  border-top: 0px;
 }
 
 .blogs_header_text h1 {
   font-family: "Oswald", sans-serif;
   color: #1a9b69;
   font-size: 3.3em;
+}
+
+#all_posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#blog_post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 4vh 0px;
+}
+
+.blog_header p {
+  font-size: 0.9em;
+  padding: 1vh;
+}
+
+.blog_header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  padding: 4vh 1vh;
+  padding-bottom: 0px;
+}
+
+.blog_header img {
+  width: 100%;
+}
+
+.blog_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 4vh 8vw;
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.blog_button {
+  border: 1px solid black;
+  color: #252120;
+  font-family: "Oswald", sans-serif;
+  margin: 3vh 0px;
+  padding: 1vh 3vw;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.blog_button a:visited {
+  color: #252120;
+}
+
+.blog_button:hover {
+  background-color: #252120;
+}
+
+.blog_button:hover > a {
+  color: #1a9b69;
 }
 
 @media only screen and (min-width: 600px) {
@@ -485,8 +783,12 @@ body {
     margin: 20px;
   }
   #home_header_container {
-    height: 924px;
+    height: 91vh;
     border: 4px #eeeeee solid;
+    border-top: 0px;
+  }
+  .to_bottom {
+    font-size: 2.7em;
   }
   #home_main_container {
     display: -webkit-box;
@@ -519,16 +821,16 @@ body {
     border: 4px #eeeeee solid;
     height: 90px;
   }
-  .footer_images i {
-    font-size: 3.5em;
+  .footer_images a {
+    font-size: 3.4em;
     margin: 0px 50px;
   }
   #about_me_header_container {
-    background-color: #2c2d36;
+    background-color: #252120;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 500px;
+    height: 650px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -536,6 +838,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     border: 4px #eeeeee solid;
+    border-top: 0px;
   }
   .about_me_header_text {
     font-family: "Oswald", sans-serif;
@@ -555,17 +858,30 @@ body {
     margin: 60px;
     margin-bottom: 0px;
   }
-  .hobbies h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 3em;
-    padding: 70px;
+  label {
+    font-size: 2em;
+  }
+  select, .name, textarea, input[type=submit] {
+    font-size: 1.5em;
+  }
+  select {
+    padding: 1.5vh 0.9vw;
+  }
+  option {
+    font-size: 0.5em;
+  }
+  .name {
+    height: 5vh;
+  }
+  textarea {
+    height: 15vh;
   }
   #portfolio_header_container {
-    background-color: #2c2d36;
+    background-color: #252120;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 500px;
+    height: 650px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -573,6 +889,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     border: 4px #eeeeee solid;
+    border-top: 0px;
   }
   .portfolio_header_text {
     font-family: "Oswald", sans-serif;
@@ -583,10 +900,10 @@ body {
     font-size: 3.7em;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
-    padding: 30px 40px;
-    color: #eeeeee;
-    background-color: #2c2d36;
-    margin: 60px 20px;
+    padding: 20px;
+    background-color: #252120;
+    color: #1a9b69;
+    margin: 60px 30px;
   }
   .special p {
     margin-bottom: 50px;
@@ -594,8 +911,8 @@ body {
   .icon {
     font-size: 2em;
   }
-  .languages_content i:hover {
-    font-size: 1.6em;
+  .languages_content a:hover {
+    font-size: 1.5em;
   }
   .heading p {
     font-size: 2em;
@@ -607,6 +924,39 @@ body {
   .projects_content h4 {
     padding: 40px;
     font-size: 2.4em;
+  }
+  #blogs_header_container {
+    background-color: #252120;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 650px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 4px #eeeeee solid;
+    border-top: 0px;
+  }
+  .blogs_header_text {
+    font-family: "Oswald", sans-serif;
+    color: #eeeeee;
+    font-size: 1.6em;
+  }
+  .blog_header h1 {
+    font-size: 2.8em;
+  }
+  .blog_header p {
+    font-size: 1.2em;
+  }
+  .blog_info p {
+    font-size: 1.6em;
+  }
+  .blog_button {
+    padding: 1vh 4vw;
+    font-size: 1.5em;
   }
 }
 
@@ -649,7 +999,7 @@ body {
     width: 100%;
   }
   #home_header_container {
-    height: 99vh;
+    height: 91vh;
   }
   .home_header_text h1 {
     font-size: 7.5em;
@@ -681,7 +1031,7 @@ body {
     font-size: 1.6em;
     width: 70%;
   }
-  .footer_images i {
+  .footer_images a {
     font-size: 3.5em;
     margin: 0px 150px;
   }
@@ -698,7 +1048,7 @@ body {
     margin: 0 10%;
   }
   #about_me_skills_container {
-    height: 85vh;
+    margin: 10vh 0px;
   }
   .hobbies_content {
     -webkit-box-orient: horizontal;
@@ -709,13 +1059,28 @@ body {
         justify-content: space-around;
   }
   .hobbies {
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-family: "Oswald", sans-serif;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
+  }
+  .hobbies h1 {
+    border: #252120 4px solid;
   }
   #hobbie_images {
-    width: 70%;
-    max-height: 312.14px;
+    width: 90%;
+    max-height: 328px;
+  }
+  .hobbies_content p {
+    font-size: 1.8em;
+  }
+  input[type=submit] {
+    margin-bottom: 1.8vh;
+  }
+  input[type=submit]:hover {
+    font-size: 1.7em;
+  }
+  option {
+    font-size: 1.1em;
   }
   .heading h1 {
     margin: 150px 40px;
@@ -726,7 +1091,7 @@ body {
   .upright_triangle {
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background-color: #2c2d36;
+    background-color: #252120;
     width: 6em;
     height: 5em;
     display: -webkit-box;
@@ -744,7 +1109,7 @@ body {
   .upsidedown_triangle {
     -webkit-clip-path: polygon(1% 2%, 98% 2%, 49% 99%);
             clip-path: polygon(1% 2%, 98% 2%, 49% 99%);
-    background-color: #2c2d36;
+    background-color: #252120;
     width: 6em;
     height: 5em;
     display: -webkit-box;
@@ -778,8 +1143,12 @@ body {
   .icon:hover {
     font-size: 1.1em;
   }
-  .languages_content i {
+  .languages_content a {
     font-size: 2em;
+    margin: 35px;
+  }
+  .languages_content a:hover {
+    font-size: 2.5em;
   }
   .heading {
     display: -webkit-box;
@@ -822,6 +1191,34 @@ body {
   .projects_content h4 {
     padding: 25px;
   }
+  #all_posts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 4vw;
+            column-gap: 4vw;
+    row-gap: 4vh;
+    margin: 3vh 2vw;
+  }
+  #blog_post {
+    border: 3px solid #252120;
+  }
+  .blog_header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    padding: 1vh;
+  }
+  .blog_info {
+    margin: 4vh 4vw;
+  }
+  .blog_info p {
+    font-size: 1.2em;
+  }
+  .blog_header {
+    margin-bottom: 0px;
+  }
 }
 
 * {
@@ -829,5 +1226,6 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 1;
 }
 /*# sourceMappingURL=styles.css.map */

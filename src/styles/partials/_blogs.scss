@@ -1,4 +1,6 @@
-@import "fonts_colors";  
+@import "fonts_colors";   
+
+// HEADER
 
 #blogs_header_container{  
     @include header_mobile
@@ -7,4 +9,83 @@
 .blogs_header_text h1 {  
     @include header_format_mobile
 }  
+
+
+// BLOGS  
+
+#all_posts { 
+    display:flex; 
+    flex-direction: column; 
+
+}
+
+#blog_post { 
+    display: flex;  
+    flex-direction: column;
+
+}
+
+.blog_header { 
+    display: flex;    
+    flex-direction: column; 
+    align-items: center;  
+    font-family: $body_font;  
+    margin: 4vh 0px;
+} 
+
+.blog_header p { 
+    font-size:  0.9em; 
+    padding: 1vh 
+}
+
+.blog_header h1 { 
+    font-family: $body_font;  
+    font-weight: 900;
+    font-size: 1.5em; 
+    padding: 4vh 1vh; 
+    padding-bottom: 0px
+}
+
+.blog_header img {  
+    width: 100%;  
+    
+}  
+
+
+.blog_info {  
+    display:flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    margin: 4vh 8vw;  
+    margin-top: 0px;
+    font-family: $body_font;
+} 
+
+.blog_button { 
+    border: 1px solid black;
+    color: $header_background_color;
+    font-family: $title_font; 
+    margin: 3vh 0px; 
+    padding:1vh 3vw; 
+    transition: 0.4s;
+} 
+
+
+.blog_button a:visited{  
+    color: $header_background_color;
+    } 
+
+.blog_button:hover { 
+    background-color: $header_background_color;
+}    
+
+.blog_button:hover > a { 
+    color: $highlight_color
+}
+
+
+
+
 

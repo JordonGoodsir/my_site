@@ -75,13 +75,77 @@
 .hobbies h1 {  
     font-family: $title_font; 
     font-size: 2em; 
-    padding: 50px; 
-    padding-top: 0; 
+    margin: 50px;  
+    margin-top: 20px;  
+    border: $header_background_color 2px solid;
 }  
 
 .hobbies_content p {  
     margin: 30px; 
     font-size: 1em; 
     font-family: $body_font;
+} 
+
+#form_container { 
+    background-color: $header_text_color;
+} 
+
+.form_content { 
+    display: flex; 
+    flex-direction: column;  
+    margin: 0px 10vw;
 }  
+ 
+label { 
+    font-family: $body_font; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    padding: 1.5vh 0px;
+} 
+
+select {
+    padding: 1.5vh 0vw; 
+    border: solid 1px $header_background_color; 
+    font-family: $body_font; 
+    border-radius: 0.2em;
+  }  
+
+
+.name { 
+    height: 4vh;
+    border: solid 1px $header_background_color; 
+    font-family: $body_font; 
+    border-radius: 0.2em;  
+    padding:0px 1vw;
+}   
+
+textarea { 
+    height: 10vh;  
+    border: solid 1px $header_background_color; 
+    font-family: $body_font;  
+    font-size: 0.9em; 
+    border-radius: 0.2em; 
+    padding:0.5vh 1vw;
+
+}   
+
+
+input[type=submit] { 
+    border: 1px solid $header_background_color;
+    color: header;  
+    padding: 1vh 2vw; 
+    border-radius: 0.2em; 
+    transition: 0.4s; 
+    margin-bottom:3vh;
+}  
+
+
+input[type=submit]:hover { 
+    background-color: $header_background_color; 
+    color: $highlight_color; 
+    font-size: 1em;  
+    font-weight: bold; 
+} 
+
+
 

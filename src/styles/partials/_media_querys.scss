@@ -24,7 +24,16 @@
     .home_header_text h1{ font-size: 6em;} 
     .home_header_text {height: 450px;} 
     .home_header_text p {font-size: 2em; margin: 20px}  
-    #home_header_container{height:924px;border:$tablet_margin;}   
+    #home_header_container{ 
+        height: 91vh; 
+        border:$tablet_margin;  
+        border-top: 0px;
+    }   
+    
+    .to_bottom { 
+        font-size: 2.7em;
+    }
+    
 
     // main   
 
@@ -56,8 +65,8 @@
         height:90px;   
     }  
     
-    .footer_images i { 
-        font-size: 3.5em; 
+    .footer_images a { 
+        font-size: 3.4em; 
         margin: 0px 50px;
     } 
 
@@ -89,14 +98,32 @@
     margin:60px; 
     margin-bottom: 0px
 } 
+ 
+// contact me section 
 
-// hobbies section 
+label {   
+    font-size: 2em;
+} 
 
-.hobbies h1 {  
-    font-family: $title_font; 
-    font-size: 3em;  
-    padding: 70px;
-}  
+select, .name, textarea, input[type=submit]  { 
+    font-size: 1.5em; 
+}    
+
+select { 
+    padding: 1.5vh 0.9vw
+} 
+
+option { 
+    font-size: 0.5em; 
+}
+
+.name { 
+    height:5vh
+}
+
+textarea { 
+    height: 15vh;
+}
 
 // PORTFOLIO  
 
@@ -124,8 +151,8 @@
     font-size: 2em
 }     
 
-.languages_content i:hover { 
-    font-size:1.6em
+.languages_content a:hover { 
+    font-size:1.5em
 } 
 
 
@@ -143,7 +170,36 @@
 .projects_content h4 { 
     padding: 40px;
     font-size: 2.4em; 
+}  
+
+// BLOGS 
+
+#blogs_header_container { 
+    @include header_tablet; 
+}
+
+.blogs_header_text { 
+    @include header_format_tablet
 } 
+
+.blog_header h1 { 
+    font-size: 2.8em;
+
+} 
+
+.blog_header p { 
+    font-size:  1.2em 
+} 
+
+.blog_info p {  
+     font-size:  1.6em 
+} 
+
+.blog_button {  
+    padding:1vh 4vw; 
+    font-size: 1.5em;
+} 
+
 
 
 }
@@ -166,9 +222,16 @@
     
 // home    
     // header 
-    #home_header_container{ height:99vh} 
+    #home_header_container{  
+        height:91vh;  
+    } 
     .home_header_text h1{font-size: 7.5em;} 
-    .home_header_text{ height:50vh; border:$tablet_margin; padding: 0px 40px;} 
+    .home_header_text{  
+        height:50vh;  
+        border:$tablet_margin;  
+        padding: 0px 40px;  
+        
+    } 
     .home_header_text p {margin: 30px; font-size: 2.4em;} 
 
   // main 
@@ -189,9 +252,11 @@
   } 
 
 //   footer
-.footer_images i { 
+.footer_images a { 
     font-size: 3.5em; 
-    margin: 0px 150px;
+    margin: 0px 150px;  
+    
+
 }  
 
 // ABOUT_ME 
@@ -211,7 +276,7 @@
 }
 
 #about_me_skills_container { 
-    height: 85vh 
+    margin: 10vh 0px; 
 
 }
 
@@ -224,16 +289,39 @@
 }  
 
 .hobbies {  
-    font-size: 1.9em;  
+    font-size: 1.7em;  
     font-family: $title_font; 
-    padding-bottom: 80px;  
+    margin-bottom: 80px;  
+}   
+
+.hobbies h1 {  
+    border: $header_background_color 4px solid;
 }  
 
 
 #hobbie_images { 
-    width:70%;
-    max-height: 312.14px;   
+    width:90%;
+    max-height: 328px;   
+}  
+
+.hobbies_content p {  
+    font-size: 1.8em; 
+    
+}   
+
+// contact me section 
+
+input[type=submit] {  
+    margin-bottom:1.8vh; 
 } 
+
+input[type=submit]:hover { 
+    font-size: 1.7em;  
+}  
+
+option { 
+    font-size: 1.1em;
+}
 
 // PORTFOLIO 
  
@@ -256,7 +344,7 @@
     justify-content: center; 
     align-items: flex-end; 
     margin: 0px -200px;  
-    margin-top: 90px;  
+    margin-top: 90px;   
 }  
 
 .upsidedown_triangle { 
@@ -267,7 +355,6 @@
     display:flex; 
     justify-content: center; 
     align-items: flex-start;  
-  
 }   
 
 .upsidedown_icon { 
@@ -292,9 +379,14 @@
     font-size: 1.1em; 
 }  
 
-.languages_content i { 
-    font-size: 2em;
-}
+.languages_content a {  
+    font-size: 2em; 
+    margin:35px; 
+} 
+
+.languages_content a:hover { 
+    font-size:2.5em
+} 
 
 // projects section 
 
@@ -326,6 +418,39 @@ width:50%
 
 .projects_content h4 { 
     padding: 25px;
+}  
+
+// BLOGS 
+
+#all_posts { 
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    column-gap: 4vw; 
+    row-gap: 4vh;  
+    margin: 3vh 2vw;
+}  
+
+#blog_post { 
+    border: 3px solid $header_background_color
+}
+
+.blog_header h1 { 
+    font-family: $body_font;  
+    font-weight: 900;
+    font-size: 2em; 
+    padding: 1vh;
 } 
+
+.blog_info { 
+    margin: 4vh 4vw; 
+}
+
+.blog_info p { 
+    font-size: 1.2em; 
+} 
+
+.blog_header { 
+    margin-bottom: 0px;
+}
 
 } 
