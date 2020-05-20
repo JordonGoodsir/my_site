@@ -1,0 +1,482 @@
+@import "fonts_colors"; 
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;} 
+        
+// main_page    
+    // nav  
+    nav ul {font-size: 2em; margin: 0px 30px;} 
+    #nav_container{border:$tablet_margin; border-bottom: 0px;} 
+
+    // header
+    .home_header_text h1{ font-size: 6em;} 
+    .home_header_text {height: 490px;} 
+    .home_header_text p {font-size: 2em; margin: 20px}  
+    #home_header_container{ 
+        height: 90.2vh; 
+        border:$tablet_margin;  
+        border-top: 0px;
+    }    
+
+    .contact_me {  
+        font-size: 1.7em;  
+    }   
+    
+    
+    .to_bottom { 
+        font-size: 3.2em; 
+        top: 92%;
+    }
+    
+
+    // main   
+
+    #home_main_container {  
+      display:flex; 
+      justify-content: center;   
+    }
+    
+    .home_main_section_content { 
+        flex-direction:row;  
+        justify-content: space-around; 
+        align-items: center;  
+        min-height:500px;
+        width: 95%
+    }   
+
+    .home_main_section_content img { 
+        width: 46% 
+    } 
+    
+
+    .home_main_section_content p {  
+        font-size: 1.5em;
+    } 
+
+    .resume_button { 
+        font-size: 1.6em;
+    }
+
+    // footer 
+    #footer_container{ 
+        border:$tablet_margin;  
+        height:90px;   
+    }  
+    
+    .footer_images a { 
+        font-size: 3.4em; 
+        margin: 0px 50px;
+    } 
+
+  // about_me  
+
+// header
+#about_me_header_container { 
+    @include header_tablet
+ }
+
+ .about_me_header_text { 
+    @include header_format_tablet
+ }
+
+// skills section
+
+.about_me_skills_content h1, .hobbies_content h1 {  
+    font-size: 3.1em; 
+    margin: 60px; 
+} 
+
+.about_me_skills_content p, .hobbies_content p { 
+    font-size: 2.1em; 
+    margin: 60px
+}  
+
+.about_me_skills_content h2, .hobbies_content h2 { 
+    font-size: 2.4em;
+    margin:60px; 
+    margin-bottom: 0px
+} 
+ 
+// contact me section  
+
+.form_text {  
+    font-size: 2.1em;
+    } 
+
+label {   
+    font-size: 2em;
+} 
+
+select, .name, textarea, input[type=submit]  { 
+    font-size: 1.5em; 
+}    
+
+select { 
+    padding: 1.5vh 0.9vw
+} 
+
+option { 
+    font-size: 0.5em; 
+}
+
+.name { 
+    height:5vh
+}
+
+textarea { 
+    height: 15vh;
+} 
+
+
+
+// PORTFOLIO  
+
+// header
+
+#portfolio_header_container { 
+    @include header_tablet; 
+}
+
+.portfolio_header_text { 
+    @include header_format_tablet
+}  
+
+.heading h1 { 
+    @include heading_tablet
+}  
+
+// languages section 
+
+.special p { 
+    margin-bottom: 50px;
+}
+
+.icon { 
+    font-size: 2em
+}     
+
+.languages_content a:hover { 
+    font-size:1.5em
+} 
+
+
+// projects section
+
+.heading p { 
+    font-size: 2em
+} 
+
+.project_image { 
+    height:500px;
+    border: $tablet_margin;
+} 
+
+.projects_content h4 { 
+    padding: 40px;
+    font-size: 2.4em; 
+}  
+
+// BLOGS 
+
+#blogs_header_container { 
+    @include header_tablet; 
+}
+
+.blogs_header_text { 
+    @include header_format_tablet
+} 
+
+.blog_header h1 { 
+    font-size: 2.8em;
+
+} 
+
+.blog_header p { 
+    font-size:  1.2em 
+} 
+
+.blog_info p {  
+     font-size:  1.6em 
+} 
+
+.blog_button {  
+    padding:1vh 4vw; 
+    font-size: 1.5em;
+} 
+
+
+
+}
+  
+  @media only screen and (min-width: 769px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;} 
+    
+    
+// home    
+    // header 
+    #home_header_container{  
+        height:91vh;  
+    } 
+    .home_header_text h1{font-size: 7em;} 
+    .home_header_text{  
+        height:61vh;  
+        border:$tablet_margin;  
+        padding: 0px 40px;  
+        
+    } 
+    .home_header_text p {margin: 30px; font-size: 2.4em;} 
+
+  // main 
+  #home_main_container {  
+      display:flex; 
+      justify-content: center; 
+      min-height: 700px;
+  }
+
+  .home_main_section_content img { 
+      width: 28%; 
+  } 
+
+  .home_main_section_content {  
+      justify-content: space-around;  
+      font-size: 1.5em; 
+      width: 65%; 
+  }  
+
+  .resume_button { 
+    font-size: 1.6em;
+}
+
+//   footer
+.footer_images a { 
+    font-size: 3.5em; 
+    margin: 0px 150px;  
+    
+
+}  
+
+// ABOUT_ME 
+
+// section 1
+
+.about_me_skills_content img { 
+    width: 60%;  
+}  
+
+.about_me_skills_content { 
+    flex-direction: row 
+}
+
+.about_me_skills_content { 
+    margin: 0 10%;
+}
+
+#about_me_skills_container { 
+    margin: 10vh 0px; 
+
+}
+
+
+// section 2 
+
+.hobbies_content { 
+    flex-direction: row;
+    justify-content: space-around; 
+}  
+
+.hobbies {  
+    font-size: 1.7em;  
+    font-family: $title_font; 
+    margin-bottom: 80px;  
+}   
+
+.hobbies h1 {  
+    border: $header_background_color 4px solid;
+}  
+
+
+#hobbie_images { 
+    width:90%;
+    max-height: 328px;   
+}  
+
+.hobbies_content p {  
+    font-size: 1.8em; 
+    
+}   
+
+// contact me section 
+
+input[type=submit] {  
+    margin-bottom:1.8vh; 
+} 
+
+input[type=submit]:hover { 
+    font-size: 1.7em;  
+}  
+
+option { 
+    font-size: 1.1em;
+}
+
+// PORTFOLIO 
+ 
+// languages section
+
+.heading h1 { 
+    margin: 100px 40px;  
+} 
+
+.special h1 { 
+    margin-top: 100px
+} 
+
+.upright_triangle { 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);  
+    background-color: $header_background_color;
+    width: 6em; 
+    height: 5em;  
+    display:flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    margin: 0px -200px;  
+    margin-top: 90px;   
+}  
+
+.upsidedown_triangle { 
+    clip-path: polygon(1% 2%, 98% 2%, 49% 99%); 
+    background-color: $header_background_color;
+    width: 6em; 
+    height: 5em;  
+    display:flex; 
+    justify-content: center; 
+    align-items: flex-start;  
+}   
+
+.upsidedown_icon { 
+    margin-top: 75px;
+} 
+
+.rightside_icon { 
+    margin-bottom: 75px;
+} 
+
+.languages_content { 
+    display:flex; 
+    justify-content: center; 
+    height:600px;  
+}  
+
+.icon { 
+    font-size: 1em
+}   
+
+.icon:hover { 
+    font-size: 1.1em; 
+}  
+
+.languages_content a {  
+    font-size: 2em; 
+    margin:35px; 
+} 
+
+.languages_content a:hover { 
+    font-size:2.5em
+} 
+
+// projects section 
+
+.heading {  
+display: flex;   
+justify-content: center; 
+align-items: center; 
+flex-direction: column;
+
+}
+
+.heading h1 { 
+    width: 95%
+}
+
+.heading p {  
+display: flex;   
+justify-content: center; 
+align-items: center; 
+width:50%
+
+}
+
+.projects_content { 
+    flex-direction: row; 
+    justify-content: space-around; 
+} 
+
+
+.projects_content h4 { 
+    padding: 25px;
+}   
+
+.project_image {  
+    max-height: 380px;
+}
+
+
+
+// BLOGS 
+
+#all_posts { 
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    column-gap: 4vw; 
+    row-gap: 4vh;  
+    margin: 3vh 2vw;
+}  
+
+#blog_post { 
+    border: 3px solid $header_background_color
+}
+
+.blog_header h1 { 
+    font-family: $body_font;  
+    font-weight: 900;
+    font-size: 2em; 
+    padding: 1vh;
+} 
+
+.blog_info { 
+    margin: 4vh 4vw; 
+}
+
+.blog_info p { 
+    font-size: 1.2em; 
+} 
+
+.blog_header { 
+    margin-bottom: 0px;
+}
+
+} 

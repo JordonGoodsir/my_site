@@ -1,0 +1,160 @@
+@import "fonts_colors"; 
+
+
+// header
+#about_me_header_container {  
+    @include header_mobile
+}
+
+.about_me_header_text h1 {  
+    @include header_format_mobile
+} 
+
+.about_me_header_text span { 
+    color: $highlight_color
+}  
+
+// skills section
+
+#about_me_skills_container { 
+    background-color: $header_text_color; 
+    display:flex; 
+    align-items:center;
+    
+}    
+
+.about_me_skills_content h1 { 
+    font-family: $title_font; 
+    font-size: 2em
+}
+
+.about_me_skills_content {  
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;
+    text-align: center; 
+}
+
+.about_me_skills_content img { 
+    width: 50%; 
+    margin: 30px; 
+    
+} 
+
+// hobbie section
+
+.about_me_skills_content p {  
+    margin: 30px; 
+    font-size: 1em; 
+    font-family: $body_font;
+}  
+
+#hobbie_images { 
+    width: 100%;  
+} 
+
+
+#hobbies_container { 
+    background-color: $header_text_color
+} 
+
+.hobbies_content { 
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;
+    text-align: center; 
+}
+
+.hobbies_content h2 { 
+    font-family: $body_font; 
+    font-size: 1.4em; 
+    margin: 30px; 
+    margin-bottom: 0;
+}  
+
+.hobbies h1 {  
+    font-family: $title_font; 
+    font-size: 2em; 
+    margin: 50px;  
+    margin-top: 20px;  
+    border: $header_background_color 2px solid;
+}  
+
+.hobbies_content p {  
+    margin: 30px; 
+    font-size: 1em; 
+    font-family: $body_font;
+}  
+
+// contact me section
+
+#form_container { 
+    background-color: $header_text_color;
+} 
+
+.form_content { 
+    display: flex; 
+    flex-direction: column;  
+    margin: 0px 10vw;
+}    
+
+.form_text {
+margin-bottom: 4vh;
+text-align: center; 
+font-family: $body_font;  
+font-size: 1.2em;
+} 
+
+label { 
+    font-family: $body_font; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    padding: 1.5vh 0px;
+} 
+
+select {
+    padding: 1.5vh 0vw; 
+    border: solid 1px $header_background_color; 
+    font-family: $body_font; 
+    border-radius: 0.2em;
+  }  
+
+
+.name { 
+    height: 4vh;
+    border: solid 1px $header_background_color; 
+    font-family: $body_font; 
+    border-radius: 0.2em;  
+    padding:0px 1vw;
+}   
+
+textarea { 
+    height: 10vh;  
+    border: solid 1px $header_background_color; 
+    font-family: $body_font;  
+    font-size: 0.9em; 
+    border-radius: 0.2em; 
+    padding:0.5vh 1vw;
+
+}   
+
+
+input[type=submit] { 
+    border: 1px solid $header_background_color;
+    color: header;  
+    padding: 1vh 2vw; 
+    border-radius: 0.2em; 
+    transition: 0.4s; 
+    margin-bottom:3vh;
+}  
+
+
+input[type=submit]:hover { 
+    background-color: $header_background_color; 
+    color: $highlight_color; 
+    font-size: 1em;  
+    font-weight: bold; 
+} 
+
+
+

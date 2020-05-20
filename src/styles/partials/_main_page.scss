@@ -1,4 +1,4 @@
-
+@import "fonts_colors";
 
 h1 { 
     text-align: center;
@@ -8,8 +8,11 @@ h1 {
 #nav_container { 
     background-color: $header_background_color; 
     display: flex;   
-    height: 80px; 
-    align-items: center; 
+    height: 100px; 
+    align-items: center;  
+    border: $phone_margin; 
+    border-bottom: 0px;
+    
     
 } 
 
@@ -21,22 +24,275 @@ nav ul {
     width:100%;
     padding-inline-start: 0px; 
     margin: 0px 5px;   
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 1.2em;
+    font-family: $body_font; 
+    font-size: 1.2em; 
+    font-weight: bolder;
 }   
 
-
-a { 
+ a { 
     text-decoration: none;
 }
 
-nav a:hover, nav a:active { 
-    color: $highlight_color 
+#nav_container li a:hover { 
+    color: $highlight_color;
+}
+
+ a:visited { 
+    color: $header_text_color; 
+}      
+
+
+// header  
+
+#home_header_container { 
+    background-color: $header_background_color; 
+    display:flex; 
+    height: 89vh; 
+    justify-content:center;  
+    align-items: center;   
+    border: $phone_margin; 
+    border-top: 0px;  
+}     
+
+
+.moving_shapes { 
+    position: absolute; 
+    top:0;
+    left:0; 
+    width:100%; 
+    height:100%; 
+    z-index: 0; 
+    transform: translateZ(0);
+} 
+
+.moving_shapes li { 
+    position: absolute; 
+    list-style: none; 
+    display:block; 
+    background-color: $header_text_color; 
+    opacity: 0.15; 
+    bottom: -13%;         
+    animation: float infinite; 
+    transition-timing-function: linear;
+} 
+ 
+
+.moving_shapes li:nth-child(1) {  
+    width: 5em; 
+    height: 5em;
+    left:12.5%;  
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);   
+    animation-delay: 0s; 
+    animation-duration: 21s;
+}  
+
+
+.moving_shapes li:nth-child(2) { 
+    width: 2em; 
+    height: 2em; 
+    left:25%; 
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);   
+    animation-delay: 3s; 
+    animation-duration: 22s; 
+} 
+
+.moving_shapes li:nth-child(3) { 
+    width: 1em; 
+    height: 1em;
+    left:37.5%; 
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);   
+    animation-delay: 0s; 
+    animation-duration: 20s;
+} 
+
+.moving_shapes li:nth-child(4) {   
+    width: 6.5em; 
+    height: 6.5em; 
+    left:50%; 
+    animation-delay: 3s; 
+    animation-duration: 26s; 
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);   
+
+}  
+
+.moving_shapes li:nth-child(5) { 
+    width: 1.9em; 
+    height: 1.9em; 
+    left:62.5%; 
+    animation-delay: 1s; 
+    animation-duration: 20s; 
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);   
+
+}  
+
+.moving_shapes li:nth-child(6) { 
+    width: 1.8em; 
+    height: 1.8em; 
+    left:75%; 
+    animation-delay: 4s; 
+    animation-duration: 19s; 
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);   
+
+}  
+
+.moving_shapes li:nth-child(7) { 
+    width: 1em; 
+    height: 1em; 
+    left:87.5%; 
+    animation-delay: 1.4s; 
+    animation-duration: 18s; 
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);   
 
 } 
 
 
-nav a:visited { 
+@keyframes float { 
+    0% { 
+    transform: translateY(0px); 
+    opacity: 0.5;
+    
+    } 
+    100% { 
+        transform: translateY(-1090px) rotate(630deg); 
+        opacity: 0
+    }
+}
+
+.home_header_text { 
+    display:flex;  
+    justify-content:center;  
+    align-items:center;
+    flex-direction: column;   
+    height: 300px;   
+    padding:20px;
+    border: $phone_margin;   
+} 
+
+.home_header_text h1 { 
+    font-family: $title_font; 
+    color: $header_text_color; 
+    font-size: 3.5em;
+}  
+
+.home_header_text span { 
+    color: $highlight_color
+}
+
+.home_header_text p { 
+    font-family: $body_font; 
+    color: $header_text_color; 
+    margin: 10px;  
+    padding-right: 0px;  
+    font-size:1.2em;  
+}     
+
+.contact_me {  
+    border: 2px $highlight_color solid; 
+    border-radius: 0.2em;
+    font-family: $body_font; 
+    font-size: 1em; 
+    padding: 1vh 4vw;  
+    transition: 0.3s; 
+    margin-top: 1vh; 
+
+}   
+
+.contact_me a:visited { 
     color: $header_text_color
 }
 
+.contact_me:hover {  
+    background-color: $highlight_color
+ 
+} 
+ 
+
+.to_bottom {  
+    color: $header_text_color;   
+    position: absolute; 
+    top: 93%; 
+    font-size: 2em;
+}
+
+// main content
+
+#home_main_container {  
+    background-color: $header_text_color;    
+} 
+
+.home_main_section_content { 
+    font-family: $body_font; 
+    display: flex; 
+    flex-direction: column;   
+    align-items:center;
+    text-align:center;   
+    padding: 40px 10px; 
+    font-size: 1.2em; 
+} 
+
+.home_text { 
+    display:flex; 
+    flex-direction: column; 
+}
+
+.home_main_section_content img { 
+    width: 45%;  
+    margin: 10vh 2vw;
+} 
+
+.resume_container { 
+    width:100%;
+    display:flex; 
+    justify-content: center;
+}
+
+.resume_button { 
+    border: 1px solid $header_background_color; 
+    font-family: $body_font; 
+    border-radius: 0.2em;
+    padding: 0.8vh 2vw;  
+    font-weight: bold; 
+    transition: 0.3; 
+    margin-top: 4vh 
+}   
+
+.resume_button:visited { 
+    color: $header_background_color;
+}
+
+.resume_button:hover { 
+    background-color:$header_background_color; 
+    color: $highlight_color
+} 
+
+
+// footer 
+
+#footer_container { 
+    background-color: $header_background_color;  
+    display:flex; 
+    justify-content: center;
+    width:100%;  
+    height: 60px; 
+    border: 2px $header_text_color solid; 
+    margin-top:2vh;
+}  
+
+.footer_images { 
+    display:flex; 
+    align-items: center; 
+    color: $header_text_color;  
+} 
+
+.footer_images a { 
+    margin: 0px 20px;   
+    width:100%;
+    color: $header_text_color; 
+    font-size: 2.2em; 
+
+}  
+
+i:hover { 
+    color: $highlight_color;  
+    transform: scale(1.4);
+}   

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="https://kit.fontawesome.com/c9ff5d0c48.js" crossorigin="anonymous"></script> 
     <link rel= stylesheet href=styles/styles.css>
     <title>Document</title>
 </head>
@@ -11,31 +12,64 @@
     <nav> 
       <div id=nav_container>
         <ul> 
-            <li><a href= #>Home</a></li> 
-            <li><a href= #>About Me</a></li> 
-            <li><a href= #>Portfolio</a></li> 
-            <li><a href= #>Blogs</a></li>
+            <li><a href= index.html>Home</a></li> 
+            <li><a href= about_me.html>About Me</a></li> 
+            <li><a href= portfolio.html>Portfolio</a></li> 
+            <li><a href= blogs.html>Blogs</a></li>
         </ul> 
       </div>  
-    </nav>
-    <p>hi</p>
+    </nav> 
+    
     <header>  
-        <h1> Start of the page, big thing are gonna happen :)</h1>
+        <div id=home_header_container> 
+          
+          <ul class=moving_shapes>  
+            <li></li> 
+            <li></li> 
+            <li></li> 
+            <li></li>  
+            <li></li> 
+            <li></li> 
+            <li></li>
+          </ul> 
 
+          <div class=home_header_text>
+          <h1>Welcome</h1> 
+          <h1> I'm <span>Jordon</span></h1> 
+          <p>A Junior Web Dev</p> 
+          <a class=contact_me href=about_me.html#contact_here><h3>Contact Me</h3></a>
+          </div>    
+
+        <div class = to_bottom> 
+        <a href= #bottom><i class="fas fa-arrow-down"></i></a>
+        </div>
+ 
+      </div>
+        
     </header> 
 
-    <section> 
+    <section>  
+      <div id=home_main_container>  
+        <div class= home_main_section_content> 
+          <img src=/docs/random_person.png alt="A picture of me :)"> 
+        <div class=home_text>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices, metus dictum scelerisque dictum, purus turpis tincidunt ante, quis aliquet arcu nibh sit amet dui.</p>  
+          <div class=resume_container> 
+            <a href=# class=resume_button>Resume</a>
+          </div> 
+        </div> 
+        </div> 
+    </section>  
 
-    </section> 
-
-    <article> 
-
-
-    </article> 
-
-    <footer> 
-        
-    </footer>
-    
+    <footer>  
+    <div id= footer_container>
+      <div class=footer_images>
+      <a href= https://www.linkedin.com/feed target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href= https://twitter.com/explore target="_blank"><i class="fab fa-twitter-square"></i></a> 
+      <a href= https://github.com/JordonGoodsir target="_blank"><i class="fab fa-github-square"></i></a>
+      </div> 
+    </div>
+    </footer> 
+    <div id=bottom></div>
 </body>
 </html>
