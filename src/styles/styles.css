@@ -80,7 +80,7 @@ a:visited {
   list-style: none;
   display: block;
   background-color: #eeeeee;
-  opacity: 0.15;
+  opacity: 0;
   bottom: -13%;
   -webkit-animation: float infinite;
           animation: float infinite;
@@ -178,9 +178,9 @@ a:visited {
             transform: translateY(0px);
     opacity: 0.5;
   }
-  100% {
-    -webkit-transform: translateY(-1090px) rotate(630deg);
-            transform: translateY(-1090px) rotate(630deg);
+  80% {
+    -webkit-transform: translateY(-100vh) rotate(630deg);
+            transform: translateY(-100vh) rotate(630deg);
     opacity: 0;
   }
 }
@@ -191,9 +191,9 @@ a:visited {
             transform: translateY(0px);
     opacity: 0.5;
   }
-  100% {
-    -webkit-transform: translateY(-1090px) rotate(630deg);
-            transform: translateY(-1090px) rotate(630deg);
+  80% {
+    -webkit-transform: translateY(-100vh) rotate(630deg);
+            transform: translateY(-100vh) rotate(630deg);
     opacity: 0;
   }
 }
@@ -259,6 +259,13 @@ a:visited {
   position: absolute;
   top: 93%;
   font-size: 2em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.to_bottom a:hover {
+  color: #1a9b69;
+  font-size: 1.1em;
 }
 
 #home_main_container {
@@ -316,6 +323,8 @@ a:visited {
   -webkit-transition: 0.3;
   transition: 0.3;
   margin-top: 4vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .resume_button:visited {
@@ -356,9 +365,11 @@ a:visited {
   width: 100%;
   color: #eeeeee;
   font-size: 2.2em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-i:hover {
+.footer_images a:hover {
   color: #1a9b69;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
@@ -425,51 +436,6 @@ i:hover {
 }
 
 .about_me_skills_content p {
-  margin: 30px;
-  font-size: 1em;
-  font-family: "Montserrat", sans-serif;
-}
-
-#hobbie_images {
-  width: 100%;
-}
-
-#hobbies_container {
-  background-color: #eeeeee;
-}
-
-.hobbies_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.hobbies_content h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.4em;
-  margin: 30px;
-  margin-bottom: 0;
-}
-
-.hobbies h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 2em;
-  margin: 50px;
-  margin-top: 20px;
-  border: #252120 2px solid;
-}
-
-.hobbies_content p {
-  margin: 30px;
-  font-size: 1em;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -565,6 +531,127 @@ input[type=submit]:hover {
   font-size: 3.3em;
 }
 
+.moving_shapes1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.moving_shapes1 li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  background-color: #eeeeee;
+  opacity: 0.15;
+  bottom: 20vh;
+  -webkit-animation: float infinite;
+          animation: float infinite;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.moving_shapes1 li:nth-child(1) {
+  width: 5em;
+  height: 5em;
+  left: 12.5%;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 21s;
+          animation-duration: 21s;
+}
+
+.moving_shapes1 li:nth-child(2) {
+  width: 2em;
+  height: 2em;
+  left: 25%;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+}
+
+.moving_shapes1 li:nth-child(3) {
+  width: 1em;
+  height: 1em;
+  left: 37.5%;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+.moving_shapes1 li:nth-child(4) {
+  width: 6.5em;
+  height: 6.5em;
+  left: 50%;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.moving_shapes1 li:nth-child(5) {
+  width: 1.9em;
+  height: 1.9em;
+  left: 62.5%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.moving_shapes1 li:nth-child(6) {
+  width: 1.8em;
+  height: 1.8em;
+  left: 75%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 19s;
+          animation-duration: 19s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.moving_shapes1 li:nth-child(7) {
+  width: 1em;
+  height: 1em;
+  left: 87.5%;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+          clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(-100vh) rotate(630deg);
+            transform: translateY(-100vh) rotate(630deg);
+    opacity: 0;
+  }
+}
+
 body {
   background-color: #eeeeee;
 }
@@ -645,12 +732,18 @@ body {
   transition: .5s ease;
   padding: 5px 0px;
   border: 2px #eeeeee solid;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .projects_content h4 {
   background-color: #252120;
+  font-family: "Montserrat", sans-serif;
   padding: 20px;
   color: #eeeeee;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 0.1em;
 }
 
 .projects_content h4:hover {
@@ -829,6 +922,9 @@ body {
   .col-s-12 {
     width: 100%;
   }
+  .moving_shapes1 li {
+    bottom: -2vh;
+  }
   nav ul {
     font-size: 2em;
     margin: 0px 30px;
@@ -893,7 +989,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 650px;
+    height: 600px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -951,7 +1047,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 650px;
+    height: 600px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -974,6 +1070,9 @@ body {
     background-color: #252120;
     color: #1a9b69;
     margin: 60px 30px;
+  }
+  .special h1 {
+    z-index: -1;
   }
   .special p {
     margin-bottom: 50px;
@@ -1000,7 +1099,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 650px;
+    height: 600px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1068,11 +1167,14 @@ body {
   .col-12 {
     width: 100%;
   }
+  .moving_shapes1 li {
+    bottom: -11vh;
+  }
   #home_header_container {
     height: 91vh;
   }
   .home_header_text h1 {
-    font-size: 7em;
+    font-size: 6em;
   }
   .home_header_text {
     height: 61vh;
@@ -1130,29 +1232,7 @@ body {
   }
   #about_me_skills_container {
     margin: 10vh 0px;
-  }
-  .hobbies_content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .hobbies {
-    font-size: 1.7em;
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 80px;
-  }
-  .hobbies h1 {
-    border: #252120 4px solid;
-  }
-  #hobbie_images {
-    width: 90%;
-    max-height: 328px;
-  }
-  .hobbies_content p {
-    font-size: 1.8em;
+    margin-top: 0px;
   }
   input[type=submit] {
     margin-bottom: 1.8vh;
@@ -1165,6 +1245,17 @@ body {
   }
   .heading h1 {
     margin: 100px 40px;
+    z-index: -1;
+    font-size: 3.4em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    padding: 1.5vh;
+    background-color: #252120;
+    color: #1a9b69;
+    margin: 60px 30px;
+  }
+  .heading p {
+    font-size: 1.6em;
   }
   .special h1 {
     margin-top: 100px;
@@ -1173,8 +1264,8 @@ body {
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: #252120;
-    width: 6em;
-    height: 5em;
+    width: 5em;
+    height: 4em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1191,8 +1282,8 @@ body {
     -webkit-clip-path: polygon(1% 2%, 98% 2%, 49% 99%);
             clip-path: polygon(1% 2%, 98% 2%, 49% 99%);
     background-color: #252120;
-    width: 6em;
-    height: 5em;
+    width: 5em;
+    height: 4em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1220,16 +1311,22 @@ body {
   }
   .icon {
     font-size: 1em;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .icon:hover {
     font-size: 1.1em;
+    -webkit-box-shadow: 0px 13px 7px 0px rgba(0, 0, 0, 0.79);
+            box-shadow: 0px 13px 7px 0px rgba(0, 0, 0, 0.79);
   }
   .languages_content a {
-    font-size: 2em;
-    margin: 35px;
+    font-size: 1.4em;
+    margin: 47px 0px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .languages_content a:hover {
-    font-size: 2.5em;
+    font-size: 1.9em;
   }
   .heading {
     display: -webkit-box;
@@ -1271,6 +1368,7 @@ body {
   }
   .projects_content h4 {
     padding: 25px;
+    font-size: 1.6em;
   }
   .project_image {
     max-height: 380px;

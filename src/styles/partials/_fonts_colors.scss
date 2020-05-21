@@ -28,7 +28,7 @@ background-color: $header_background_color;
 @mixin header_tablet { 
     background-color: $header_background_color; 
     display:flex; 
-    height: 650px; 
+    height: 600px; 
     justify-content:center;  
     align-items: center;
     border: $tablet_margin;  
@@ -59,5 +59,18 @@ background-color: $header_background_color;
     background-color: $header_background_color; 
     color: $highlight_color;    
     margin: 60px 30px; 
-} 
+}  
+
+
+@mixin heading_desktop {  
+    font-size: 3.4em;
+    font-family: $title_font; 
+    font-weight: 500; 
+    padding: 1.5vh;   
+    background-color: $header_background_color; 
+    color: $highlight_color;    
+    margin: 60px 30px; 
+
+}
+
 

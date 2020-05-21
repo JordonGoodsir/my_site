@@ -70,7 +70,7 @@ nav ul {
     list-style: none; 
     display:block; 
     background-color: $header_text_color; 
-    opacity: 0.15; 
+    opacity: 0; 
     bottom: -13%;         
     animation: float infinite; 
     transition-timing-function: linear;
@@ -152,8 +152,8 @@ nav ul {
     opacity: 0.5;
     
     } 
-    100% { 
-        transform: translateY(-1090px) rotate(630deg); 
+    80% { 
+        transform: translateY(-100vh) rotate(630deg); 
         opacity: 0
     }
 }
@@ -211,7 +211,13 @@ nav ul {
     color: $header_text_color;   
     position: absolute; 
     top: 93%; 
-    font-size: 2em;
+    font-size: 2em; 
+    transition: 0.3s
+} 
+
+.to_bottom a:hover {  
+    color: $highlight_color;
+    font-size: 1.1em;
 }
 
 // main content
@@ -253,7 +259,9 @@ nav ul {
     padding: 0.8vh 2vw;  
     font-weight: bold; 
     transition: 0.3; 
-    margin-top: 4vh 
+    margin-top: 4vh; 
+    transition: 0.3s;
+
 }   
 
 .resume_button:visited { 
@@ -281,18 +289,21 @@ nav ul {
 .footer_images { 
     display:flex; 
     align-items: center; 
-    color: $header_text_color;  
+    color: $header_text_color; 
+      
 } 
 
 .footer_images a { 
     margin: 0px 20px;   
     width:100%;
     color: $header_text_color; 
-    font-size: 2.2em; 
+    font-size: 2.2em;  
+    transition: 0.4s;  
+    
 
 }  
 
-i:hover { 
+.footer_images a:hover { 
     color: $highlight_color;  
-    transform: scale(1.4);
+    transform: scale(1.4);   
 }   

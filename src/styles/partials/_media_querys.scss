@@ -14,7 +14,13 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;} 
-        
+      
+    
+// animation  
+.moving_shapes1 li {  
+    bottom:-2vh
+}
+
 // main_page    
     // nav  
     nav ul {font-size: 2em; margin: 0px 30px;} 
@@ -160,7 +166,11 @@ textarea {
     @include heading_tablet
 }  
 
-// languages section 
+// languages section  
+
+.special h1 { 
+    z-index: -1;
+}
 
 .special p { 
     margin-bottom: 50px;
@@ -238,13 +248,18 @@ textarea {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;} 
     
-    
+
+// animation 
+.moving_shapes1 li {  
+    bottom:-11vh
+}
+
 // home    
     // header 
     #home_header_container{  
         height:91vh;  
     } 
-    .home_header_text h1{font-size: 7em;} 
+    .home_header_text h1{font-size: 6em;} 
     .home_header_text{  
         height:61vh;  
         border:$tablet_margin;  
@@ -287,7 +302,9 @@ textarea {
 
 // ABOUT_ME 
 
-// section 1
+// section 1 
+
+
 
 .about_me_skills_content img { 
     width: 60%;  
@@ -302,37 +319,9 @@ textarea {
 }
 
 #about_me_skills_container { 
-    margin: 10vh 0px; 
+    margin: 10vh 0px;  
+    margin-top: 0px;
 
-}
-
-
-// section 2 
-
-.hobbies_content { 
-    flex-direction: row;
-    justify-content: space-around; 
-}  
-
-.hobbies {  
-    font-size: 1.7em;  
-    font-family: $title_font; 
-    margin-bottom: 80px;  
-}   
-
-.hobbies h1 {  
-    border: $header_background_color 4px solid;
-}  
-
-
-#hobbie_images { 
-    width:90%;
-    max-height: 328px;   
-}  
-
-.hobbies_content p {  
-    font-size: 1.8em; 
-    
 }   
 
 // contact me section 
@@ -354,8 +343,15 @@ option {
 // languages section
 
 .heading h1 { 
-    margin: 100px 40px;  
-} 
+    margin: 100px 40px;
+    z-index: -1;  
+    @include heading_desktop;
+}  
+
+.heading p { 
+    font-size: 1.6em;
+}
+
 
 .special h1 { 
     margin-top: 100px
@@ -364,8 +360,8 @@ option {
 .upright_triangle { 
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);  
     background-color: $header_background_color;
-    width: 6em; 
-    height: 5em;  
+    width: 5em; 
+    height: 4em;  
     display:flex; 
     justify-content: center; 
     align-items: flex-end; 
@@ -376,8 +372,8 @@ option {
 .upsidedown_triangle { 
     clip-path: polygon(1% 2%, 98% 2%, 49% 99%); 
     background-color: $header_background_color;
-    width: 6em; 
-    height: 5em;  
+    width: 5em; 
+    height: 4em;  
     display:flex; 
     justify-content: center; 
     align-items: flex-start;  
@@ -398,20 +394,24 @@ option {
 }  
 
 .icon { 
-    font-size: 1em
+    font-size: 1em; 
+    transition: 0.3s; 
+    
 }   
 
 .icon:hover { 
-    font-size: 1.1em; 
+    font-size: 1.1em;  
+    box-shadow: 0px 13px 7px 0px rgba(0,0,0,0.79);
 }  
 
 .languages_content a {  
-    font-size: 2em; 
-    margin:35px; 
+    font-size: 1.4em; 
+    margin:47px 0px;  
+    transition: 0.3s;
 } 
 
 .languages_content a:hover { 
-    font-size:2.5em
+    font-size:1.9em
 } 
 
 // projects section 
@@ -443,7 +443,8 @@ width:50%
 
 
 .projects_content h4 { 
-    padding: 25px;
+    padding: 25px; 
+    font-size: 1.6em;
 }   
 
 .project_image {  

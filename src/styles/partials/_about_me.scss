@@ -39,52 +39,11 @@
     width: 50%; 
     margin: 30px; 
     
-} 
-
-// hobbie section
-
-.about_me_skills_content p {  
-    margin: 30px; 
-    font-size: 1em; 
-    font-family: $body_font;
 }  
 
-#hobbie_images { 
-    width: 100%;  
-} 
-
-
-#hobbies_container { 
-    background-color: $header_text_color
-} 
-
-.hobbies_content { 
-    display: flex; 
-    flex-direction: column;   
-    align-items: center;
-    text-align: center; 
+.about_me_skills_content p { 
+    font-family: $body_font
 }
-
-.hobbies_content h2 { 
-    font-family: $body_font; 
-    font-size: 1.4em; 
-    margin: 30px; 
-    margin-bottom: 0;
-}  
-
-.hobbies h1 {  
-    font-family: $title_font; 
-    font-size: 2em; 
-    margin: 50px;  
-    margin-top: 20px;  
-    border: $header_background_color 2px solid;
-}  
-
-.hobbies_content p {  
-    margin: 30px; 
-    font-size: 1em; 
-    font-family: $body_font;
-}  
 
 // contact me section
 
