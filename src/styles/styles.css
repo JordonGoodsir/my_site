@@ -437,6 +437,8 @@ a:visited {
 
 .about_me_skills_content p {
   font-family: "Montserrat", sans-serif;
+  margin: 1vh 4vh;
+  font-size: 1.14em;
 }
 
 #form_container {
@@ -715,6 +717,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 5vh;
 }
 
 .fade1, .fade2, .fade3 {
@@ -1409,5 +1412,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 1;
+  line-height: 136%;
 }
 /*# sourceMappingURL=styles.css.map */

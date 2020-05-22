@@ -42,7 +42,9 @@
 }  
 
 .about_me_skills_content p { 
-    font-family: $body_font
+    font-family: $body_font; 
+    margin: 1vh 4vh; 
+    font-size: 1.14em; 
 }
 
 // contact me section
