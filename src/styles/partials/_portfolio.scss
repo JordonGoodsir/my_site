@@ -148,13 +148,14 @@ body {
     @include heading_mobile;   
 }     
 
-.heading p { 
+.heading p {  
     background-color: $header_text_color; 
     text-align: center; 
     font-family: $body_font; 
     padding: 5vh; 
-    padding-top: 0px;
-}
+    padding-top: 0px; 
+} 
+
 
 
 #projects { 
