@@ -29,18 +29,6 @@ nav ul {
     font-weight: bolder;
 }   
 
- a { 
-    text-decoration: none;
-} 
-
-#nav_container li a:link { 
-    text-decoration: none;
-} 
-
-#nav_container li a:visited { 
-    text-decoration: none;
-}
-
 
 #nav_container li a:hover { 
     color: $highlight_color;
@@ -227,6 +215,10 @@ nav ul {
 .to_bottom a:hover {  
     color: $highlight_color;
     font-size: 1.1em;
+} 
+
+.to_bottom a:link { 
+    text-decoration: none;
 }
 
 // main content
@@ -271,16 +263,20 @@ nav ul {
     margin-top: 4vh; 
     transition: 0.3s;
 
-}   
+}    
 
 .resume_button:visited { 
     color: $header_background_color;
-}
+} 
 
 .resume_button:hover { 
     background-color:$header_background_color; 
     color: $highlight_color
-} 
+}  
+
+.resume_button:link{ 
+    text-decoration: none;
+}
 
 
 // footer 
