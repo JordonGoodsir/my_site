@@ -31,7 +31,16 @@ nav ul {
 
  a { 
     text-decoration: none;
+} 
+
+#nav_container li a:link { 
+    text-decoration: none;
+} 
+
+#nav_container li a:visited { 
+    text-decoration: none;
 }
+
 
 #nav_container li a:hover { 
     color: $highlight_color;
