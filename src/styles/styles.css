@@ -264,6 +264,10 @@ a:visited {
   font-size: 1.1em;
 }
 
+.to_bottom a:link {
+  text-decoration: none;
+}
+
 #home_main_container {
   background-color: #eeeeee;
 }
@@ -330,6 +334,10 @@ a:visited {
 .resume_button:hover {
   background-color: #252120;
   color: #1a9b69;
+}
+
+.resume_button:link {
+  text-decoration: none;
 }
 
 #footer_container {
