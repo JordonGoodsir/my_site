@@ -32,6 +32,10 @@ nav ul {
 
 #nav_container li a:hover { 
     color: $highlight_color;
+}  
+
+#nav_container li a:link { 
+    color: $header_text_color
 }
 
  a:visited { 

@@ -40,6 +40,10 @@ nav ul {
   color: #1a9b69;
 }
 
+#nav_container li a:link {
+  color: #eeeeee;
+}
+
 a:visited {
   color: #eeeeee;
 }
