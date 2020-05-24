@@ -209,7 +209,11 @@ nav ul {
 .contact_me:hover {  
     background-color: $highlight_color
  
-} 
+}  
+
+.contact_me:link { 
+    color: $header_text_color
+}
  
 
 .to_bottom {  
