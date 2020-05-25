@@ -36,6 +36,11 @@ nav ul {
   font-weight: bolder;
 }
 
+#nav_container li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 #nav_container li a:hover {
   color: #1a9b69;
 }

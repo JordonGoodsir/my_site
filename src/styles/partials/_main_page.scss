@@ -26,8 +26,12 @@ nav ul {
     margin: 0px 5px;   
     font-family: $body_font; 
     font-size: 1.2em; 
-    font-weight: bolder;
-}   
+    font-weight: bolder; 
+}    
+
+#nav_container li a { 
+    transition: 0.3s
+}
 
 
 #nav_container li a:hover { 
