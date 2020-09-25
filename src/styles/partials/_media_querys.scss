@@ -355,7 +355,7 @@ option {
 
 .special h1 { 
     margin-top: 100px
-} 
+}  
 
 .upright_triangle { 
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);  
@@ -390,7 +390,8 @@ option {
 .languages_content { 
     display:flex; 
     justify-content: center; 
-    height:600px;  
+    // height:0px;   
+    padding-top: 1.4rem;
 }  
 
 .icon { 

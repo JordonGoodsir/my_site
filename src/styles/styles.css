@@ -1331,7 +1331,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 600px;
+    padding-top: 1.4rem;
   }
   .icon {
     font-size: 1em;
